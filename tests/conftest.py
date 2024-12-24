@@ -10,12 +10,10 @@ def driver():
     yield driver
     driver.quit()
 
-# Фикстура для страницы главной страницы
 @pytest.fixture
 def main_page(driver):
     return MainPageMetod(driver)
 
-# Фикстура для страницы заказа
 @pytest.fixture
 def order_page(driver):
     return OrderPageMetood(driver)
